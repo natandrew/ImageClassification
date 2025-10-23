@@ -1,8 +1,7 @@
--f https://download.pytorch.org/whl/cpu/torch_stable.html
-
+--index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1
+torchvision==0.20.1
 streamlit>=1.20
-torch==2.5.1+cpu
-torchvision==0.20.1+cpu
 pillow
 numpy
 matplotlib
