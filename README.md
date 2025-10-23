@@ -2,6 +2,17 @@
 
 **CIFAR‑10 image classification with a ResNet‑18 backbone (PyTorch)**
 
+[Demo on Streamlit (public)](https://imageclassification-bbfu6anfydbfkt9xxpwhf9.streamlit.app/)
+
+---
+
+## What’s new (since the notebook)
+This repository now includes a lightweight Streamlit demo (`streamlit_app.py`) so anyone can interactively try the model in a browser.
+
+Two runtime modes:
+- **Real inference**: when PyTorch is available in the environment, the app loads a checkpoint and runs real model inference (same architecture as the notebook).
+- **Demo mode (fallback)**: on hosts that cannot install PyTorch (e.g. Streamlit Community Cloud build failures), the app automatically falls back to a demo mode that uses **committed demo assets** (`demo_assets/` + `demo_preds.json`) to show precomputed predictions. This ensures the public demo always works.
+
 ---
 
 ## Project summary
